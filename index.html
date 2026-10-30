@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página - JavaScript</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8eef7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px #0002;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #244b80;
+        }
+
+        .mensagem {
+            font-size: 18px;
+            color: #555;
+            margin: 25px 0;
+        }
+
+        button {
+            background-color: #244b80;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3672b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌟 Seja Bem-vindo!</h1>
+
+        <p class="mensagem">
+            Clique no botão para receber uma mensagem especial.
+        </p>
+
+        <button class="botao">Mostrar mensagem</button>
+
+    </div>
+
+    <script>
+
+        // Seleciona os elementos da página
+        const botao = document.querySelector(".botao");
+        const mensagem = document.querySelector(".mensagem");
+
+        // Cria uma função em JavaScript
+        function mostrarMensagem() {
+
+            mensagem.textContent =
+                "Parabéns! Você está aprendendo JavaScript. Nunca pare de estudar e buscar novos conhecimentos! 🚀";
+
+        }
+
+        // Executa a função quando clicar no botão
+        botao.addEventListener("click", mostrarMensagem);
+
+    </script>
+
+</body>
+</html>
